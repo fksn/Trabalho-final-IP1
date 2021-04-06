@@ -747,7 +747,6 @@ void abre_arq(Mat * A, Mat * B, Mat * Ac, Mat * Bc, Mat * Bot_Mem1, Mat * Bot_Me
         for ( c = 0; c < nc; c++)
         {
             fread(&(A->m[l][c]), sizeof(int), 1, arq);
-            printf("%d ", A->m[l][c]);
         }
         printf("\n");
     }
@@ -756,7 +755,6 @@ void abre_arq(Mat * A, Mat * B, Mat * Ac, Mat * Bc, Mat * Bot_Mem1, Mat * Bot_Me
         for ( c = 0; c < nc; c++)
         {
             fread(&(B->m[l][c]), sizeof(int), 1, arq);
-            printf("%d ", B->m[l][c]);
         }
         printf("\n");
     }
@@ -766,7 +764,6 @@ void abre_arq(Mat * A, Mat * B, Mat * Ac, Mat * Bc, Mat * Bot_Mem1, Mat * Bot_Me
         for ( c = 0; c < nc; c++)
         {
             fread(&(Ac->m[l][c]), sizeof(int), 1, arq);
-            printf("%d ", Ac->m[l][c]);
         }
         printf("\n");
     }
@@ -776,7 +773,6 @@ void abre_arq(Mat * A, Mat * B, Mat * Ac, Mat * Bc, Mat * Bot_Mem1, Mat * Bot_Me
         for ( c = 0; c < nc; c++)
         {
             fread(&(Bc->m[l][c]), sizeof(int), 1, arq);
-            printf("%d ", Bc->m[l][c]);
         }
         printf("\n");
     }
@@ -786,7 +782,6 @@ void abre_arq(Mat * A, Mat * B, Mat * Ac, Mat * Bc, Mat * Bot_Mem1, Mat * Bot_Me
         for ( c = 0; c < nc; c++)
         {
             fread(&(Bot_Mem1->m[l][c]) , sizeof(int), 1, arq);
-            printf("%d ", Bot_Mem1->m[l][c]);
         }
         printf("\n");
     }
@@ -796,7 +791,6 @@ void abre_arq(Mat * A, Mat * B, Mat * Ac, Mat * Bc, Mat * Bot_Mem1, Mat * Bot_Me
         for ( c = 0; c < nc; c++)
         {
             fread(&(Bot_Mem2->m[l][c]), sizeof(int), 1, arq);
-            printf("%d ", Bot_Mem2->m[l][c]);
         }
         printf("\n");
     }
